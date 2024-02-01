@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    <header class="text-warning d-flex justify-content-between p-3 bg-warning">
+      <div class="ms-3 bg-dark rounded pt-1 pb-1 ps-2 pe-2 fs-4">Portfolio</div>
+      <div class="d-flex">
+        <button class="bi bi-justify btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#q1"></button>
+       <div class="offcanvas offcanvas-end" id="q1">
+        <div class="offcanvas-header">
+          <h2>Portfolio</h2>
+          <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav d-flex justify-content-end">
+            <li class="nav-item">
+              <a
+                href="#home"
+                class="nav-link bi bi-house text-primary-emphasis rounded-2 fw-bolder"
+              >
+                Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="#about"
+                class="nav-link bi bi-person-fill text-primary-emphasis rounded-2 fw-bolder"
+              >
+                About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="#project"
+                class="nav-link bi bi-journal-bookmark text-primary-emphasis rounded-2 fw-bolder"
+              >
+                Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="#contact"
+                class="nav-link bi bi-person-rolodex text-primary-emphasis rounded-2 fw-bolder"
+              >
+                Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="/public/doc/MyCV.pdf"
+                class="nav-link bi bi-bag text-primary-emphasis rounded-2 fw-bolder"
+              >
+                My Resume</a
+              >
+            </li>
+          </ul>
+         </div>
+       </div>
+      </div>
+    </header>
+    <section class="bg-secondary">
+
+      <!--Home-->
+      <div class="h-100 bg-secondary d-flex">
+        <div class="text-warning mt-5 ms-5 fs-3 fw-bolder border-top shadow-lg rounded-4" id="home">
+          <p class="ms-4">Hi I am Vishal Mishra <br><span class="text-primary-emphasis">FullStack Developer</span></p>
+          <p class="text-secondary-emphasis m-4 fs-6 fw-lighter font-monospace">
+             My objective is simply to be the best <br>
+             web developer that I can be and to <br>
+             contribute to the technology industry<br>
+             all that I know and can do. I am dedicated<br>
+             that I can about development</p>
+            <button class="btn btn-warning ms-5 font-monospace" data-bs-toggle="modal" data-bs-target="#login">Contact Me</button>
+            <div class="modal fade" id="login">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="bi bi-person-fill text-dark">Contact Me</span>
+                  </div>
+                  <div class="modal-body">
+                    <dl>
+                      <dt class="text-dark fs-4">User Name</dt>
+                      <dd><input type="text" name="name" class="form-control" placeholder=""></dd>
+                      <dt class="text-dark fs-4">Mobile</dt>
+                      <dd><input type="tel" name="Mobile" class="form-control" placeholder=""></dd>
+                      <dt class="text-dark fs-4">Email</dt>
+                      <dd><input type="email" name="email" class="form-control" placeholder=""></dd>
+                    </dl>
+                  </div>
+                  <div class="modal-footer">
+                     <button class="btn btn-primary" data-bs-dismiss="modal">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="mt-5 col-lg img-fluid  d-flex justify-content-center align-items-top">
+          <img
+            class="h-100 w-50 rounded-bottom-4 rounded-top-4 p-1 border-4 border border-warning"
+            src="/public/img/myimage.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      
+
+      <!--About -->
+
+      
+      <div class="mt-5">
+        <div class="d-flex justify-content-center align-items-center fs-2 fw-bolder text-white fst-italic">
+          <p class="mt-4 text-decoration-underline" id="about">About</p>
+        </div>
+      </div>  
+       <div class="row mb-4 bg-dark">
+          <div class="col ms-5 mb-5">
+            <img src="/public/img/skills.jpg" alt="" class="border border-2 border-secondary rounded-circle h-100 w-50 ms-5 mt-4 mb-4">
+          </div>
+          <div class="col text-primary mt-3 mb-3 border-top shadow-lg border-2 border-secondary bg-gradient me-5 rounded-4 w-100">
+              <h2>Skills</h2>
+              <span class="text-warning fw-bold">Front End : Html,Css,JavaScript,Bootstrap</span><br>
+              <span class="text-warning fw-bold">Back End : Node Js,Express Js</span><br>
+              <span class="text-warning fw-bold">Database : MobgoDb ,Mysql</span><br>
+              <span class="text-warning fw-bold">Programming Language : Java,Python,C</span><br>
+              <span class="text-warning fw-bold">Tools : Git Git-Hub</span>
+          </div>
+       </div>
+        <!--Project-->
+
+          <div class="d-flex justify-content-center align-content-center mt-4">
+            <p class="fs-3 fw-bold text-white text-decoration-underline mt-4" id="project">My Projects</p>
+          </div>
+
+          <div class="accordion bg-gradient" id="project">
+            <div class="accordion-item bg-secondary border-0">
+              <div class="accordion-header">
+                <button class="btn btn-danger w-100 fw-bold text-end" data-bs-toggle="collapse" data-bs-target="#project1">1. E-Commerce Website</button>
+              </div>
+              <div class="accordion-collapse collapse" data-bs-parent="#project" id="project1">
+                <div class="accordion-body bg-danger mt-2 rounded-3">
+                  <div class="row ms-4 mt-4 border-top border-2 bg-gradient shadow-lg rounded-4 p-3 me-3">
+                    <div class="col rounded shadow-lg h-25">
+                      <img src="/public/img/project1.png" alt="" class="rounded h-100 w-100">
+                    </div>
+                    <div class="col fs-5 fw-bold font-monospace">
+                      <h1 class="text-warning">E-Commerce Website</h1>
+                      I made this project with the help of Html,Css and JavaScript as a front end and for back-end I used MySql.
+                    </div>
+                  </div>
+                </div>
+               </div>
+            
+              <div class="accordion-header mt-2">
+                <button class="btn btn-danger w-100 text-start fw-bold" data-bs-toggle="collapse" data-bs-target="#project2">2. Online Food Ordering Website</button>
+              </div>
+              <div class="accordion-collapse collapse" data-bs-parent="#project" id="project2">
+                <div class="accordion-body bg-danger mt-2 rounded-3">
+                  <div class="row ms-4 mt-4 border-top border-2 bg-gradient shadow-lg rounded-4 p-3 me-3">
+                    <div class="col rounded shadow-lg h-25">
+                      <img src="/public/img/project2.png" alt="" class="rounded h-100 w-100">
+                    </div>
+                    <div class="col fs-5 fw-bold font-monospace">
+                      <h1 class="text-warning">Online Food Ordering</h1>
+                      I made this project with the help of Html,Css and JavaScript as a front end and for back-end I used MySql.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+
+        <!--Contact Me-->
+
+        <div class="d-flex justify-content-center align-items-center mt-5" id="contact">
+          <p class="fs-2 text-white fw-bold text-decoration-underline mb-4">Contact me</p>
+        </div>
+        <div class="h-100 d-flex justify-content-center me-5">
+          <div class="border-2 h-50 w-25 border-bottom shadow-lg border-dark-subtle rounded-5 d-flex justify-content-center align-items-center ms-5 mb-5 p-3 bg-gradient">
+            <form>
+              <div class="mb-2"><input type="text" name="name" placeholder="Name" class="form-control" class="pb-2 bg-danger"></div>
+              <div class="mb-2"><input type="text" name="numebr" placeholder="Contact" class="form-control" class="pb-2" required value="+91"></div>
+              <div class="mb-2"><input type="text" name="message" placeholder="Enter your message" class="form-control" class="pb-2"></div>
+              <div><button class="btn btn-warning w-100 fw-bold" type="submit"><span class="fw-bold bi bi-send"></span></button></div>
+            </form>
+          </div>
+        </div>
+
+        <!--Our Partners-->
+       <div class="d-flex justify-content-end align-items-end me-4">
+          <a class="text-secondary-emphasis" href="https://www.facebook.com/profile.php?id=100016075652175"><span class="bi bi-facebook fs-4"></span></a>&nbsp;
+          <a class="text-secondary-emphasis" href="https://www.instagram.com/vishhhal00?igsh=MTJiaG00eWt4bzdwOQ=="><span class="bi bi-instagram fs-4"></span></a>&nbsp;
+          <a class="text-secondary-emphasis" href="https://github.com/vishalmishra99"><span class="bi bi-github fs-4"></span></a>
+       </div>
+    </section>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
